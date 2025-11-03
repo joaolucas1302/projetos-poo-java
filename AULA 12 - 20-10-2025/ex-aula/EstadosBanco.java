@@ -26,5 +26,17 @@ public class EstadosBanco {
     public int getCont() {return cont;}
 
     private boolean exist(int codigo) {return false;}
+}
+
+    public class EstadosBanco extends BancoBase {
+    public EstadosBanco() {
+        this.list = new ArrayList<Estado>();
+        this.cont = 0;
+    }
+
+    @Override
+    public void inserir() {
+    this.banco.add(value); 
+   }
 
 }
